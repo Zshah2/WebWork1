@@ -1,0 +1,50 @@
+
+
+/* Base styles for all screens */
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* For larger screens (desktops and above) */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 18px;
+    }
+    .container {
+      padding: 25px;
+    }
+  }
+  
+  /* For tablets (screen widths between 768px and 1200px) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      padding: 15px;
+    }
+  }
+  
+  /* For mobile screens (widths smaller than 768px) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* For extra small mobile screens (widths smaller than 576px) */
+  @media (max-width: 576px) {
+    body {
+      font-size: 12px;
+    }
+    .container {
+      padding: 5px;
+    }
+  }
+  

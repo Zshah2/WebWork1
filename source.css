@@ -1,0 +1,212 @@
+/* General Styles */
+header {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+li {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+li a {
+    text-decoration: none;
+    color: #2e3b4e;
+    font-weight: bold;
+}
+
+li a:hover, .related-video-button:hover {
+    color: #007BFF;
+}
+
+.DropDownTextBook {
+    margin: 20px;
+    text-align: center;
+}
+
+.TextBook {
+    font-style: italic;
+    font-size: 1.55rem;
+    color: #2e3b4e;
+    margin: 10px 0;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Centering the Dropdown in the Page */
+.dropdown-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: max-height 0.5s ease-in-out;
+    z-index: 20;
+}
+
+.dropdown-item {
+    padding: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #e2e2e2;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Button Style */
+.related-video-button {
+    background-color: #515458;
+    color: white;
+    border: none;
+    padding: 5px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Video iframe styling */
+.video-iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    display: block;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: .5rem; 
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px 12px 0 0;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer.show-footer-effect {
+    transform: translateY(0); /* Slide up to be visible */
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Responsive Styles */
+
+/* Media Query for very small screens (Mobile) */
+@media (max-width: 480px) {
+    header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .dropdown-list {
+        width: 90%; /* Make it wider on small screens */
+        max-height: 150px; /* Reduce max height for small devices */
+    }
+
+    .video-iframe {
+        width: 100%;
+        max-width: 100%; /* Make iframe responsive on small screens */
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Media Query for Tablets and Medium Screens */
+@media (max-width: 768px) {
+    .dropdown-list {
+        width: 75%; /* Adjust width to fit well on tablets */
+        max-height: 180px; /* Slightly reduce height */
+    }
+
+    .video-iframe {
+        width: 100%;
+        max-width: 350px; /* Make iframe more compact */
+    }
+
+    footer {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+/* Media Query for larger screens (Desktops) */
+@media (min-width: 769px) {
+    header {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .dropdown-list {
+        width: 60%; /* Keep dropdown at 60% for larger screens */
+        max-height: 200px;
+    }
+
+    .video-iframe {
+        width: 100%;
+        max-width: 400px; /* Adjust iframe size for larger screens */
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 20px;
+    }
+}

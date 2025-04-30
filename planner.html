@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MenuStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="source.css">
+    <link rel="stylesheet" href="plan.css">
+    <link rel="stylesheet" href="screen.css">
+    <title>Study Resources</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="S.jpg" alt="Buddy Helper Logo" class="logo"> 
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Study Tools ▾</a>
+                <div class="dropdown-content">
+                    <a href="/Studytips.html">Study Tips</a>
+                    <a href="/studyResources.html">Study Resources</a>
+                    <a href="/planner.html">Study Planner</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">More ▾</a>
+                <div class="dropdown-content">
+                    <a href="/task-manager.html">Task Manager</a>
+                    <a href="/flashcards.html">Flashcards</a>
+                    <a href="/motivation.html">Mindset & Health</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <div class="container">
+        <h1>🧠 Study Planner - Weekly Schedule</h1>
+    
+        <form id="taskForm">
+          <input type="text" id="taskName" placeholder="Subject or Task" required />
+          <input type="color" id="taskColor" value="#90caf9" />
+          <button type="submit">Add Task</button>
+        </form>
+    
+        <div class="task-palette" id="taskPalette"></div>
+    
+        <table id="schedule">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody">
+            <!-- JS will fill time slots -->
+          </tbody>
+        </table>
+      </div>
+    
+      <script src="scrip.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <footer >
+        <p>&copy; 2025 Study Planner. All rights reserved.</p>
+    </footer>
+
+  
+
+ 
+
+
+</body>
+</html>

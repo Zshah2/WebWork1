@@ -1,0 +1,82 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .task-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-block {
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #000;
+    cursor: grab;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .task-block .delete-btn {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 28px; /* ↓ from 60px */
+    vertical-align: top;
+    padding: 5px; /* ↓ from default or 10px */
+    font-size: 14px; /* ↓ smaller text */
+  }
+  
+  
+  td {
+    background: #fafafa;
+  }
+  
+  td.over {
+    background-color: #c8e6c9; 
+}
+
+#scheduleBody {
+    width: max-content;
+    min-width: 800px; /* or even 650px */
+  }
+  
+  #schedulebody {
+    position: relative;  /* Make sure it’s positioned */
+    z-index: 10;         /* Bring it above other elements */
+  }
+  
+  header, footer {
+    position: relative;  /* Ensure header/footer also has a stacking context */
+    z-index: 1;          /* Keep them behind the table */
+  }
+  
