@@ -20,7 +20,7 @@ const textbooks = [
     {
         title: "College Algebra",
         url: "https://openstax.org/details/books/college-algebra",
-        videoUrl: "https://www.youtube.com/embed/mza6QYH3oEw"  // All Of Algebra Explained In 15 Minutes
+        videoUrl: "https://www.youtube.com/embed/WsQQvHm4lSw"  // All Of Algebra Explained In 15 Minutes
     },
     {
         title: "Physics: Principles with Applications",
